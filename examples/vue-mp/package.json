@@ -1,33 +1,43 @@
 {
-  "name": "vue-mp",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "private": true,
-  "scripts": {
-    "dev": "webpack -w",
-    "serve": "webpack-dev-server"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "@megalo/target": "^0.4.1",
-    "@megalo/template-compiler": "^0.3.2",
-    "babel-loader": "8",
-    "css-loader": "^1.0.0",
-    "less": "^3.8.1",
-    "less-loader": "^4.1.0",
-    "megalo": "^0.3.2",
-    "mini-css-extract-plugin": "^0.4.1",
-    "vue": "^2.5.17",
-    "vue-loader": "15.4.0",
-    "vue-style-loader": "^4.1.1",
-    "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
-  }
+	"name": "demo",
+	"version": "0.0.0",
+	"description": "megalo target check",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"dev:alipay": "webpack --config ./build/webpack.config.alipay.js -w",
+		"dev:swan": "webpack --config ./build/webpack.config.swan.js -w",
+		"dev:wechat": "webpack --config ./build/webpack.config.wechat.js -w"
+	},
+	"keywords": [],
+	"author": "Ken Ho <gitea@fake.local>",
+	"license": "ISC",
+	"devDependencies": {
+		"@megalo/entry": "^0.1.0",
+		"@b2nil/melaglo-target": "^0.4.6",
+		"@megalo/template-compiler": "^0.4.0",
+		"babel-core": "6",
+		"babel-loader": "^7.1.5",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-0": "^6.24.1",
+		"copy-webpack-plugin": "^4.5.2",
+		"css-loader": "^1.0.0",
+		"html-webpack-plugin": "^3.2.0",
+		"less": "^3.8.1",
+		"less-loader": "^4.1.0",
+		"mini-css-extract-plugin": "^0.4.1",
+		"vue": "^2.5.17",
+		"vue-loader": "15.4.0",
+		"vue-style-loader": "^4.1.1",
+		"vue-template-compiler": "^2.5.17",
+		"webpack": "^4.16.5",
+		"webpack-cli": "^3.1.0",
+		"webpack-dev-server": "^3.1.5"
+	},
+	"dependencies": {
+		"@megalo/vhtml-plugin": "^0.1.0",
+		"megalo": "^0.4.0",
+		"octoparse": "^0.2.0"
+	}
 }
