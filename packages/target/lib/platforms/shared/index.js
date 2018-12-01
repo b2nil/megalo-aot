@@ -162,7 +162,8 @@ function normalizeImports( {
   imports = Object.assign( {}, imports )
 
   Object.keys( imports ).forEach( k => {
-    const { name, resolved } = imports[ k ]
+    let { name, resolved } = imports[ k ]
+    resolved = resolved.replace(/\\/g, '/') // 路径统一使用正斜杠 /，避免使用反斜杠 \ 的 windows 路径导致正则匹配规则失效
 
     const subpackage = subpackagesUtil.findSubpackage( resolved, subpackages )
     const root = subpackage ? subpackage.root + '/' : ''

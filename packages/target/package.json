@@ -1,36 +1,34 @@
 {
-  "name": "@megalo/target",
-  "version": "0.4.6",
-  "description": "",
-  "main": "lib/index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "lib"
-  ],
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@megalo/regular-template-compiler": "^0.1.0",
-    "@megalo/template-compiler": "*",
-    "@vue/component-compiler-utils": "^2.1.2",
-    "babel-generator": "^6.26.1",
-    "babelon": "^1.0.5",
-    "copy-webpack-plugin": "^4.5.2",
-    "hash-sum": "^1.0.2",
-    "loader-utils": "^1.1.0",
-    "lodash.merge": "^4.6.1",
-    "postcss": "^7.0.2",
-    "postcss-selector-parser": "^5.0.0-rc.3",
-    "querystring": "^0.2.0",
-    "semver": "^5.6.0"
-  },
-  "peerDependencies": {
-    "@babel/core": "^7.1.6",
-    "vue-loader": "15.4.0",
-    "webpack": "^4.16.5"
-  }
+	"name": "@b2nil/megalo-target",
+	"version": "0.4.6",
+	"description": "",
+	"main": "lib/index.js",
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [ "lib" ],
+	"scripts": {},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"@megalo/regular-template-compiler": "^0.1.0",
+		"@megalo/template-compiler": "*",
+		"@vue/component-compiler-utils": "^2.1.2",
+		"babel-generator": "^6.26.1",
+		"babelon": "^1.0.5",
+		"copy-webpack-plugin": "^4.5.2",
+		"hash-sum": "^1.0.2",
+		"loader-utils": "^1.1.0",
+		"lodash.merge": "^4.6.1",
+		"postcss": "^7.0.2",
+		"postcss-selector-parser": "^5.0.0-rc.3",
+		"querystring": "^0.2.0",
+		"semver": "^5.6.0"
+	},
+	"peerDependencies": {
+		"@babel/core": "^7.1.6",
+		"vue-loader": "15.4.0",
+		"webpack": "^4.16.5"
+	}
 }
