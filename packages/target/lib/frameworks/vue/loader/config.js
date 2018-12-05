@@ -1,3 +1,4 @@
+const json5 = require('json5')
 const toString = Object.prototype.toString
 
 module.exports = function(source) {
@@ -11,7 +12,9 @@ module.exports = function(source) {
 		let config
 
 		try {
-			config = JSON.parse(source)
+			// use json5 to ensure that the config is of type [object Object]
+			// otherwise the config may always return {}
+			config = json5.parse(source)
 			if (toString.call(config) !== '[object Object]') {
 				config = {}
 			}
